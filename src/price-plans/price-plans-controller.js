@@ -1,5 +1,6 @@
 const { pricePlans } = require("./price-plans");
-const { usageForAllPricePlans } = require("../usage/usage");
+const { usageForAllPricePlans, usageCost} = require("../usage/usage");
+const { meterPricePlanMap } = require("../meters/meters");
 
 const recommend = (getReadings, req) => {
     const meter = req.params.smartMeterId;
@@ -24,4 +25,21 @@ const compare = (getData, req) => {
     };
 };
 
-module.exports = { recommend, compare };
+const getLastWeekUsageCost = (getReadings, req) => {
+    const meter = req.params.smartMeterId;
+    if (!meterPricePlanMap.hasOwnProperty(meter)) {
+        return "Your SmartMeterId is not right!";
+    }
+
+    const specificRate = meterPricePlanMap[meter].rate;
+    const specificSupplier = meterPricePlanMap[meter].supplier;
+    const specificLastWeekUsage = usageCost(getReadings(meter),specificRate);
+    return {
+        smartMeterId: req.params.smartMeterId,
+        specificLastWeekUsage,
+        specificSupplier,
+    }
+
+};
+
+module.exports = { recommend, compare, getLastWeekUsageCost};
