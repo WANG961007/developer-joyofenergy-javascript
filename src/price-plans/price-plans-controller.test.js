@@ -104,675 +104,675 @@ describe("price plans", () => {
             [meters.METER0]: [
                 {
                     "time": 1607686125,
-                    "reading": 1.125796310571908
+                    "reading": 1
                 },
                 {
                     "time": 1607682525,
-                    "reading": 1.059970250955348
+                    "reading": 1
                 },
                 {
                     "time": 1607678925,
-                    "reading": 0.09530070007108948
+                    "reading": 1
                 },
                 {
                     "time": 1607675325,
-                    "reading": 0.36312929344618317
+                    "reading": 1
                 },
                 {
                     "time": 1607671725,
-                    "reading": 0.7627616561218362
+                    "reading": 1
                 },
                 {
                     "time": 1607668125,
-                    "reading": 1.510838403112432
+                    "reading": 1
                 },
                 {
                     "time": 1607664525,
-                    "reading": 1.0478148822424984
+                    "reading": 1
                 },
                 {
                     "time": 1607660925,
-                    "reading": 0.5024752683705849
+                    "reading": 1
                 },
                 {
                     "time": 1607657325,
-                    "reading": 1.209855881123954
+                    "reading": 1
                 },
                 {
                     "time": 1607653725,
-                    "reading": 1.4539016192595264
+                    "reading": 1
                 },
                 {
                     "time": 1607650125,
-                    "reading": 1.910331685330044
+                    "reading": 1
                 },
                 {
                     "time": 1607646525,
-                    "reading": 1.2783515278640571
+                    "reading": 1
                 },
                 {
                     "time": 1607642925,
-                    "reading": 1.593070891500914
+                    "reading": 1
                 },
                 {
                     "time": 1607639325,
-                    "reading": 1.6430136505761581
+                    "reading": 1
                 },
                 {
                     "time": 1607635725,
-                    "reading": 1.9702512971954231
+                    "reading": 1
                 },
                 {
                     "time": 1607632125,
-                    "reading": 0.8668182497368266
+                    "reading": 1
                 },
                 {
                     "time": 1607628525,
-                    "reading": 1.6716056533248707
+                    "reading": 1
                 },
                 {
                     "time": 1607624925,
-                    "reading": 0.8074774410342229
+                    "reading": 1
                 },
                 {
                     "time": 1607621325,
-                    "reading": 0.5870938240913905
+                    "reading": 1
                 },
                 {
                     "time": 1607617725,
-                    "reading": 0.2529671305079044
+                    "reading": 1
                 },
                 {
                     "time": 1607614125,
-                    "reading": 0.4392093005478568
+                    "reading": 1
                 },
                 {
                     "time": 1607610525,
-                    "reading": 1.457629355407986
+                    "reading": 1
                 },
                 {
                     "time": 1607606925,
-                    "reading": 1.5115905439600694
+                    "reading": 1
                 },
                 {
                     "time": 1607603325,
-                    "reading": 1.1908011171190616
+                    "reading": 1
                 },
                 {
                     "time": 1607599725,
-                    "reading": 0.6752815390661331
+                    "reading": 2
                 },
                 {
                     "time": 1607596125,
-                    "reading": 0.022613954639145284
+                    "reading": 2
                 },
                 {
                     "time": 1607592525,
-                    "reading": 1.0594594060342555
+                    "reading": 2
                 },
                 {
                     "time": 1607588925,
-                    "reading": 1.5557790420529063
+                    "reading": 2
                 },
                 {
                     "time": 1607585325,
-                    "reading": 0.23693451185101733
+                    "reading": 2
                 },
                 {
                     "time": 1607581725,
-                    "reading": 0.5166572586809606
+                    "reading": 2
                 },
                 {
                     "time": 1607578125,
-                    "reading": 1.5212310839181185
+                    "reading": 2
                 },
                 {
                     "time": 1607574525,
-                    "reading": 0.11108387879311588
+                    "reading": 2
                 },
                 {
                     "time": 1607570925,
-                    "reading": 1.2473605453620955
+                    "reading": 2
                 },
                 {
                     "time": 1607567325,
-                    "reading": 1.456219475699342
+                    "reading": 2
                 },
                 {
                     "time": 1607563725,
-                    "reading": 1.1595744356749456
+                    "reading": 2
                 },
                 {
                     "time": 1607560125,
-                    "reading": 0.6391845940136549
+                    "reading": 2
                 },
                 {
                     "time": 1607556525,
-                    "reading": 1.3573692813589489
+                    "reading": 2
                 },
                 {
                     "time": 1607552925,
-                    "reading": 0.5850340635972962
+                    "reading": 2
                 },
                 {
                     "time": 1607549325,
-                    "reading": 1.8511211980871005
+                    "reading": 2
                 },
                 {
                     "time": 1607545725,
-                    "reading": 1.1492410200077092
+                    "reading": 2
                 },
                 {
                     "time": 1607542125,
-                    "reading": 0.9571440270240661
+                    "reading": 2
                 },
                 {
                     "time": 1607538525,
-                    "reading": 0.056379778946868075
+                    "reading": 2
                 },
                 {
                     "time": 1607534925,
-                    "reading": 0.2906990875539992
+                    "reading": 2
                 },
                 {
                     "time": 1607531325,
-                    "reading": 1.9700567407128893
+                    "reading": 2
                 },
                 {
                     "time": 1607527725,
-                    "reading": 1.159191680604538
+                    "reading": 2
                 },
                 {
                     "time": 1607524125,
-                    "reading": 0.1547907549927432
+                    "reading": 2
                 },
                 {
                     "time": 1607520525,
-                    "reading": 1.8458469919451002
+                    "reading": 2
                 },
                 {
                     "time": 1607516925,
-                    "reading": 0.17483780715681974
+                    "reading": 2
                 },
                 {
                     "time": 1607513325,
-                    "reading": 0.893339761056879
+                    "reading": 3
                 },
                 {
                     "time": 1607509725,
-                    "reading": 1.4507338679703632
+                    "reading": 3
                 },
                 {
                     "time": 1607506125,
-                    "reading": 0.42687248931526556
+                    "reading": 3
                 },
                 {
                     "time": 1607502525,
-                    "reading": 0.34656253764857325
+                    "reading": 3
                 },
                 {
                     "time": 1607498925,
-                    "reading": 0.9020591765048649
+                    "reading": 3
                 },
                 {
                     "time": 1607495325,
-                    "reading": 1.6324380783810426
+                    "reading": 3
                 },
                 {
                     "time": 1607491725,
-                    "reading": 0.5365266568610698
+                    "reading": 3
                 },
                 {
                     "time": 1607488125,
-                    "reading": 0.10019698045050296
+                    "reading": 3
                 },
                 {
                     "time": 1607484525,
-                    "reading": 0.6904425771206046
+                    "reading": 3
                 },
                 {
                     "time": 1607480925,
-                    "reading": 0.8797116616383827
+                    "reading": 3
                 },
                 {
                     "time": 1607477325,
-                    "reading": 1.4598044325858148
+                    "reading": 3
                 },
                 {
                     "time": 1607473725,
-                    "reading": 0.607802994129591
+                    "reading": 3
                 },
                 {
                     "time": 1607470125,
-                    "reading": 1.4282181876224511
+                    "reading": 3
                 },
                 {
                     "time": 1607466525,
-                    "reading": 0.9015361148861301
+                    "reading": 3
                 },
                 {
                     "time": 1607462925,
-                    "reading": 1.3628700783909768
+                    "reading": 3
                 },
                 {
                     "time": 1607459325,
-                    "reading": 1.4327484168577156
+                    "reading": 3
                 },
                 {
                     "time": 1607455725,
-                    "reading": 0.09133322580715486
+                    "reading": 3
                 },
                 {
                     "time": 1607452125,
-                    "reading": 0.3970251957033555
+                    "reading": 3
                 },
                 {
                     "time": 1607448525,
-                    "reading": 0.9592090283047998
+                    "reading": 3
                 },
                 {
                     "time": 1607444925,
-                    "reading": 1.143102610745467
+                    "reading": 3
                 },
                 {
                     "time": 1607441325,
-                    "reading": 1.8254981052593187
+                    "reading": 3
                 },
                 {
                     "time": 1607437725,
-                    "reading": 1.990931873377654
+                    "reading": 3
                 },
                 {
                     "time": 1607434125,
-                    "reading": 1.8797087444889833
+                    "reading": 3
                 },
                 {
                     "time": 1607430525,
-                    "reading": 1.4729990239999995
+                    "reading": 3
                 },
                 {
                     "time": 1607426925,
-                    "reading": 1.96836202580789
+                    "reading": 4
                 },
                 {
                     "time": 1607423325,
-                    "reading": 1.32897685225078
+                    "reading": 4
                 },
                 {
                     "time": 1607419725,
-                    "reading": 0.7010507661198129
+                    "reading": 4
                 },
                 {
                     "time": 1607416125,
-                    "reading": 1.1913264802241605
+                    "reading": 4
                 },
                 {
                     "time": 1607412525,
-                    "reading": 1.1026798010774228
+                    "reading": 4
                 },
                 {
                     "time": 1607408925,
-                    "reading": 1.2933038927842464
+                    "reading": 4
                 },
                 {
                     "time": 1607405325,
-                    "reading": 0.058283373581273334
+                    "reading": 4
                 },
                 {
                     "time": 1607401725,
-                    "reading": 1.9192043164185137
+                    "reading": 4
                 },
                 {
                     "time": 1607398125,
-                    "reading": 0.26282735492534925
+                    "reading": 4
                 },
                 {
                     "time": 1607394525,
-                    "reading": 1.7099626203282
+                    "reading": 4
                 },
                 {
                     "time": 1607390925,
-                    "reading": 0.8983119816976344
+                    "reading": 4
                 },
                 {
                     "time": 1607387325,
-                    "reading": 1.9842236841821501
+                    "reading": 4
                 },
                 {
                     "time": 1607383725,
-                    "reading": 1.1323011218903534
+                    "reading": 4
                 },
                 {
                     "time": 1607380125,
-                    "reading": 0.1352244581613995
+                    "reading": 4
                 },
                 {
                     "time": 1607376525,
-                    "reading": 0.2107326047016489
+                    "reading": 4
                 },
                 {
                     "time": 1607372925,
-                    "reading": 0.1369586234853859
+                    "reading": 4
                 },
                 {
                     "time": 1607369325,
-                    "reading": 0.33581951401247023
+                    "reading": 4
                 },
                 {
                     "time": 1607365725,
-                    "reading": 1.1624523845416461
+                    "reading": 4
                 },
                 {
                     "time": 1607362125,
-                    "reading": 0.17678109611556803
+                    "reading": 4
                 },
                 {
                     "time": 1607358525,
-                    "reading": 0.19578423667113087
+                    "reading": 4
                 },
                 {
                     "time": 1607354925,
-                    "reading": 1.9207682557900263
+                    "reading": 4
                 },
                 {
                     "time": 1607351325,
-                    "reading": 1.2288106545932242
+                    "reading": 4
                 },
                 {
                     "time": 1607347725,
-                    "reading": 0.6437480998736622
+                    "reading": 4
                 },
                 {
                     "time": 1607344125,
-                    "reading": 0.36952087319489824
+                    "reading": 4
                 },
                 {
                     "time": 1607340525,
-                    "reading": 0.2975088015622531
+                    "reading": 5
                 },
                 {
                     "time": 1607336925,
-                    "reading": 0.7762583289472076
+                    "reading": 5
                 },
                 {
                     "time": 1607333325,
-                    "reading": 0.6788387481818883
+                    "reading": 5
                 },
                 {
                     "time": 1607329725,
-                    "reading": 1.0994853312283124
+                    "reading": 5
                 },
                 {
                     "time": 1607326125,
-                    "reading": 1.8451016456382403
+                    "reading": 5
                 },
                 {
                     "time": 1607322525,
-                    "reading": 0.09107456658878332
+                    "reading": 5
                 },
                 {
                     "time": 1607318925,
-                    "reading": 1.20174419725182
+                    "reading": 5
                 },
                 {
                     "time": 1607315325,
-                    "reading": 0.27398364378030227
+                    "reading": 5
                 },
                 {
                     "time": 1607311725,
-                    "reading": 1.2339225180415485
+                    "reading": 5
                 },
                 {
                     "time": 1607308125,
-                    "reading": 0.5179827182358778
+                    "reading": 5
                 },
                 {
                     "time": 1607304525,
-                    "reading": 0.660605321822763
+                    "reading": 5
                 },
                 {
                     "time": 1607300925,
-                    "reading": 1.2552470475496156
+                    "reading": 5
                 },
                 {
                     "time": 1607297325,
-                    "reading": 1.8691454188848757
+                    "reading": 5
                 },
                 {
                     "time": 1607293725,
-                    "reading": 0.5092725891307812
+                    "reading": 5
                 },
                 {
                     "time": 1607290125,
-                    "reading": 0.6026589603144825
+                    "reading": 5
                 },
                 {
                     "time": 1607286525,
-                    "reading": 1.7383441501814958
+                    "reading": 5
                 },
                 {
                     "time": 1607282925,
-                    "reading": 0.7906110198931402
+                    "reading": 5
                 },
                 {
                     "time": 1607279325,
-                    "reading": 1.0039349153526014
+                    "reading": 5
                 },
                 {
                     "time": 1607275725,
-                    "reading": 1.68360714818958
+                    "reading": 5
                 },
                 {
                     "time": 1607272125,
-                    "reading": 0.06291541368851616
+                    "reading": 5
                 },
                 {
                     "time": 1607268525,
-                    "reading": 0.5266741783399898
+                    "reading": 5
                 },
                 {
                     "time": 1607264925,
-                    "reading": 1.370171282463899
+                    "reading": 5
                 },
                 {
                     "time": 1607261325,
-                    "reading": 1.515626473394839
+                    "reading": 5
                 },
                 {
                     "time": 1607257725,
-                    "reading": 0.199896921373806
+                    "reading": 5
                 },
                 {
                     "time": 1607254125,
-                    "reading": 0.5021809598590363
+                    "reading": 6
                 },
                 {
                     "time": 1607250525,
-                    "reading": 1.4776055560916874
+                    "reading": 6
                 },
                 {
                     "time": 1607246925,
-                    "reading": 0.40598602459974087
+                    "reading": 6
                 },
                 {
                     "time": 1607243325,
-                    "reading": 0.6428727774057923
+                    "reading": 6
                 },
                 {
                     "time": 1607239725,
-                    "reading": 0.33063990988248504
+                    "reading": 6
                 },
                 {
                     "time": 1607236125,
-                    "reading": 0.3582390153358901
+                    "reading": 6
                 },
                 {
                     "time": 1607232525,
-                    "reading": 0.05467534201750279
+                    "reading": 6
                 },
                 {
                     "time": 1607228925,
-                    "reading": 0.7583912110121624
+                    "reading": 6
                 },
                 {
                     "time": 1607225325,
-                    "reading": 1.1135666283968608
+                    "reading": 6
                 },
                 {
                     "time": 1607221725,
-                    "reading": 1.1410756281174033
+                    "reading": 6
                 },
                 {
                     "time": 1607218125,
-                    "reading": 0.8875258985131245
+                    "reading": 6
                 },
                 {
                     "time": 1607214525,
-                    "reading": 1.2396501276820944
+                    "reading": 6
                 },
                 {
                     "time": 1607210925,
-                    "reading": 0.5942877858442563
+                    "reading": 6
                 },
                 {
                     "time": 1607207325,
-                    "reading": 1.8719862076689329
+                    "reading": 6
                 },
                 {
                     "time": 1607203725,
-                    "reading": 0.4865709820697641
+                    "reading": 6
                 },
                 {
                     "time": 1607200125,
-                    "reading": 1.0770610198651562
+                    "reading": 6
                 },
                 {
                     "time": 1607196525,
-                    "reading": 0.6196124486958974
+                    "reading": 6
                 },
                 {
                     "time": 1607192925,
-                    "reading": 1.4577451907291685
+                    "reading": 6
                 },
                 {
                     "time": 1607189325,
-                    "reading": 1.022449127427409
+                    "reading": 6
                 },
                 {
                     "time": 1607185725,
-                    "reading": 0.538603421970278
+                    "reading": 6
                 },
                 {
                     "time": 1607182125,
-                    "reading": 1.7408282989508326
+                    "reading": 6
                 },
                 {
                     "time": 1607178525,
-                    "reading": 0.38210193328076114
+                    "reading": 6
                 },
                 {
                     "time": 1607174925,
-                    "reading": 1.7343512063546038
+                    "reading": 6
                 },
                 {
                     "time": 1607171325,
-                    "reading": 0.336671298427774
+                    "reading": 6
                 },
                 {
                     "time": 1607167725,
-                    "reading": 0.6369649539095952
+                    "reading": 7
                 },
                 {
                     "time": 1607164125,
-                    "reading": 1.19051096117821
+                    "reading": 7
                 },
                 {
                     "time": 1607160525,
-                    "reading": 1.4026118464610797
+                    "reading": 7
                 },
                 {
                     "time": 1607156925,
-                    "reading": 1.4070602952887414
+                    "reading": 7
                 },
                 {
                     "time": 1607153325,
-                    "reading": 1.2356397153169936
+                    "reading": 7
                 },
                 {
                     "time": 1607149725,
-                    "reading": 1.1947104212583257
+                    "reading": 7
                 },
                 {
                     "time": 1607146125,
-                    "reading": 0.3832970185134097
+                    "reading": 7
                 },
                 {
                     "time": 1607142525,
-                    "reading": 0.40410747598154373
+                    "reading": 7
                 },
                 {
                     "time": 1607138925,
-                    "reading": 1.9036023478223556
+                    "reading": 7
                 },
                 {
                     "time": 1607135325,
-                    "reading": 1.4739652841615523
+                    "reading": 7
                 },
                 {
                     "time": 1607131725,
-                    "reading": 0.15147909184571562
+                    "reading": 7
                 },
                 {
                     "time": 1607128125,
-                    "reading": 1.7791712996076288
+                    "reading": 7
                 },
                 {
                     "time": 1607124525,
-                    "reading": 1.7764051144224355
+                    "reading": 7
                 },
                 {
                     "time": 1607120925,
-                    "reading": 0.8033815380764526
+                    "reading": 7
                 },
                 {
                     "time": 1607117325,
-                    "reading": 1.9401401261667788
+                    "reading": 7
                 },
                 {
                     "time": 1607113725,
-                    "reading": 0.8265869536494481
+                    "reading": 7
                 },
                 {
                     "time": 1607110125,
-                    "reading": 1.0352318483388943
+                    "reading": 7
                 },
                 {
                     "time": 1607106525,
-                    "reading": 0.01038406426901295
+                    "reading": 7
                 },
                 {
                     "time": 1607102925,
-                    "reading": 1.2514202948402913
+                    "reading": 7
                 },
                 {
                     "time": 1607099325,
-                    "reading": 1.3974359218471921
+                    "reading": 7
                 },
                 {
                     "time": 1607095725,
-                    "reading": 0.6111069589730604
+                    "reading": 7
                 },
                 {
                     "time": 1607092125,
-                    "reading": 0.09032224808557121
+                    "reading": 7
                 },
                 {
                     "time": 1607088525,
-                    "reading": 1.656609670944912
+                    "reading": 7
                 },
                 {
                     "time": 1607084925,
-                    "reading": 0.7167824546178876
+                    "reading": 7
                 }
             ],
         });
@@ -780,7 +780,7 @@ describe("price plans", () => {
         const expected =
             {
                 "smartMeterId": "smart-meter-0",
-                "specificLastWeekUsage": 0.05802767758361635,
+                "specificLastWeekUsage": 40,
                 "specificSupplier": "Dr Evil's Dark Energy"
             }
         ;
@@ -1475,7 +1475,7 @@ describe("price plans", () => {
         const expected = {
             "lastWeekUsageCost": {
                 "smartMeterId": "smart-meter-0",
-                "specificLastWeekUsage": 0.23952095808383234,
+                "specificLastWeekUsage": 40,
                 "specificSupplier": "Dr Evil's Dark Energy"
             },
             "differentDaysRanks": [
