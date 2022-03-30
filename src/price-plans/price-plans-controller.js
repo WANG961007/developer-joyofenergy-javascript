@@ -29,10 +29,6 @@ const compare = (getData, req) => {
 
 const getLastWeekUsageCost = (getReadings, req) => {
     const meter = req.params.smartMeterId;
-    if (!meterPricePlanMap.hasOwnProperty(meter)) {
-        return "Your SmartMeterId is not right!";
-    }
-
     const specificRate = meterPricePlanMap[meter].rate;
     const specificSupplier = meterPricePlanMap[meter].supplier;
     const specificLastWeekUsageCost = usageCost(getReadings(meter),specificRate);
@@ -45,10 +41,6 @@ const getLastWeekUsageCost = (getReadings, req) => {
 
 const getLastWeekUsageCostRank = (getReadings, req) => {
     const meter = req.params.smartMeterId;
-    if (!meterPricePlanMap.hasOwnProperty(meter)) {
-        return "Your SmartMeterId is not right!";
-    }
-
     const specificRate = meterPricePlanMap[meter].rate;
     const differentDaysRanks = getDifferentDaysCost(getReadings(meter), specificRate).sort(amountCompare("cost"));
 
