@@ -2,6 +2,7 @@ const express = require("express");
 const { readings } = require("./readings/readings");
 const { readingsData } = require("./readings/readings.data");
 const { read, store } = require("./readings/readings-controller");
+const { meterPricePlanMap } = require("./meters/meters");
 const { recommend, compare, getLastWeekUsageCost, getLastWeekUsageCostRank} = require("./price-plans/price-plans-controller");
 
 const app = express();
@@ -26,11 +27,19 @@ app.get("/price-plans/compare-all/:smartMeterId", (req, res) => {
 });
 
 app.get("/price-plans/lastWeekUsageCost/:smartMeterId", (req, res) => {
-    res.send(getLastWeekUsageCost(getReadings, req));
+    if (!meterPricePlanMap.hasOwnProperty(req.params.smartMeterId)) {
+        res.status(404).send("SmartMeterId does not exist!");
+    } else {
+        res.send(getLastWeekUsageCost(getReadings, req));
+    }
 });
 
 app.get("/price-plans/lastWeekUsageCostRank/:smartMeterId", (req, res) => {
-    res.send(getLastWeekUsageCostRank(getReadings, req));
+    if (!meterPricePlanMap.hasOwnProperty(req.params.smartMeterId)) {
+        res.status(404).send("SmartMeterId does not exist!");
+    } else {
+        res.send(getLastWeekUsageCostRank(getReadings, req));
+    }
 });
 
 const port = process.env.PORT || 8081;
