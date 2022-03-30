@@ -1,11 +1,8 @@
 const { meters, meterPricePlanMap } = require("../meters/meters");
 const { pricePlanNames, pricePlans } = require("../price-plans/price-plans");
 const { readings } = require("../readings/readings");
-const {
-    average,
-    usageCost,
-    usageForAllPricePlans,
-} = require("./usage");
+const { average, usageCost, usageForAllPricePlans } = require("./usage");
+
 
 describe("usage", () => {
     it("should average all readings for a meter", () => {
