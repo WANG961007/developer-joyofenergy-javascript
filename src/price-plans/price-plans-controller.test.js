@@ -780,7 +780,7 @@ describe("price plans", () => {
         const expected =
             {
                 "smartMeterId": "smart-meter-0",
-                "specificLastWeekUsage": 40,
+                "specificLastWeekUsageCost": 40,
                 "specificSupplier": "Dr Evil's Dark Energy"
             }
         ;
@@ -1475,37 +1475,37 @@ describe("price plans", () => {
         const expected = {
             "lastWeekUsageCost": {
                 "smartMeterId": "smart-meter-0",
-                "specificLastWeekUsage": 40,
+                "specificLastWeekUsageCost": 40,
                 "specificSupplier": "Dr Evil's Dark Energy"
             },
             "differentDaysRanks": [
                 {
-                    "dayOfWeek": "Monday",
-                    "amount": 24
+                    "dayOfWeek": "seventhDay",
+                    "cost": 240
                 },
                 {
-                    "dayOfWeek": "Tuesday",
-                    "amount": 48
+                    "dayOfWeek": "sixthDay",
+                    "cost": 480
                 },
                 {
-                    "dayOfWeek": "Wednesday",
-                    "amount": 72
+                    "dayOfWeek": "fifthDay",
+                    "cost": 720
                 },
                 {
-                    "dayOfWeek": "Thursday",
-                    "amount": 96
+                    "dayOfWeek": "fourthDay",
+                    "cost": 960
                 },
                 {
-                    "dayOfWeek": "Friday",
-                    "amount": 120
+                    "dayOfWeek": "thirdDay",
+                    "cost": 1200
                 },
                 {
-                    "dayOfWeek": "Saturday",
-                    "amount": 144
+                    "dayOfWeek": "secondDay",
+                    "cost": 1440
                 },
                 {
-                    "dayOfWeek": "Sunday",
-                    "amount": 168
+                    "dayOfWeek": "firstDay",
+                    "cost": 1680
                 }
             ]
         };
