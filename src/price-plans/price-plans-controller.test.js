@@ -16,13 +16,13 @@ describe("price plans", () => {
         const expected = {
             pricePlanComparisons: [
                 {
-                    [pricePlanNames.PRICEPLAN0]: 0.26785 / 48 * 10,
+                    [pricePlanNames.PRICEPLAN0]: 0.26785 * 10,
                 },
                 {
-                    [pricePlanNames.PRICEPLAN1]: 0.26785 / 48 * 2,
+                    [pricePlanNames.PRICEPLAN1]: 0.26785 * 2,
                 },
                 {
-                    [pricePlanNames.PRICEPLAN2]: 0.26785 / 48 * 1,
+                    [pricePlanNames.PRICEPLAN2]: 0.26785 * 1,
                 },
             ],
             smartMeterId: meters.METER0
@@ -49,13 +49,13 @@ describe("price plans", () => {
 
         const expected = [
             {
-                [pricePlanNames.PRICEPLAN2]: 0.26785 / 48 * 1,
+                [pricePlanNames.PRICEPLAN2]: 0.26785 * 1,
             },
             {
-                [pricePlanNames.PRICEPLAN1]: 0.26785 / 48 * 2,
+                [pricePlanNames.PRICEPLAN1]: 0.26785 * 2,
             },
             {
-                [pricePlanNames.PRICEPLAN0]: 0.26785 / 48 * 10,
+                [pricePlanNames.PRICEPLAN0]: 0.26785 * 10,
             },
         ];
 
@@ -80,10 +80,10 @@ describe("price plans", () => {
 
         const expected = [
             {
-                [pricePlanNames.PRICEPLAN2]: 0.26785 / 48 * 1,
+                [pricePlanNames.PRICEPLAN2]: 0.26785 * 1,
             },
             {
-                [pricePlanNames.PRICEPLAN1]: 0.26785 / 48 * 2,
+                [pricePlanNames.PRICEPLAN1]: 0.26785 * 2,
             },
         ];
 
