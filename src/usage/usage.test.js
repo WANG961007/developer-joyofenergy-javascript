@@ -16,7 +16,7 @@ describe("usage", () => {
 
         const averageMeter0 = average(getReadings(meters.METER0));
 
-        expect(averageMeter0).toBe(0.26785);
+        expect(averageMeter0).toBe("0.26785");
     });
 
     // it("should get time elapsed in hours for all readings for a meter", () => {
