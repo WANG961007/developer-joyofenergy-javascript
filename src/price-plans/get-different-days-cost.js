@@ -1,12 +1,5 @@
 const getDifferentDaysCost = (readings, rate) => {
 
-    let firstDay = new Array(24);
-    let secondDay = new Array(24);
-    let thirdDay = new Array(24);
-    let fourthDay = new Array(24);
-    let fifthDay = new Array(24);
-    let sixthDay = new Array(24);
-    let seventhDay = new Array(24);
     let firstDayAmount = 0;
     let secondDayAmount = 0;
     let thirdDayAmount = 0;
@@ -15,24 +8,23 @@ const getDifferentDaysCost = (readings, rate) => {
     let sixthDayAmount = 0;
     let sevenDayAmount = 0;
 
-    for (let i = 0; i < 24; i++) {
-        firstDay[i] = readings[i + 144];
-        secondDay[i] = readings[i + 120];
-        thirdDay[i] = readings[i + 96];
-        fourthDay[i] = readings[i + 72];
-        fifthDay[i] = readings[i + 48];
-        sixthDay[i] = readings[i + 24];
-        seventhDay[i] = readings[i];
-
-        firstDayAmount = firstDayAmount + firstDay[i].reading;
-        secondDayAmount = secondDayAmount + secondDay[i].reading;
-        thirdDayAmount = thirdDayAmount + thirdDay[i].reading;
-        fourthDayAmount = fourthDayAmount + fourthDay[i].reading;
-        fifthDayAmount = fifthDayAmount + fifthDay[i].reading;
-        sixthDayAmount = sixthDayAmount + sixthDay[i].reading;
-        sevenDayAmount = sevenDayAmount + seventhDay[i].reading;
+    for (let i = 0; i < readings.length; i++) {
+        if ((i + 1) % 7 === 0) {
+            firstDayAmount += readings[i].reading;
+        } else if ((i + 1) % 7 === 6) {
+            secondDayAmount += readings[i].reading;
+        } else if ((i + 1) % 7 === 5) {
+            thirdDayAmount += readings[i].reading;
+        } else if ((i + 1) % 7 === 4) {
+            fourthDayAmount += readings[i].reading;
+        } else if ((i + 1) % 7 === 3) {
+            fifthDayAmount += readings[i].reading;
+        } else if ((i + 1) % 7 === 2) {
+            sixthDayAmount += readings[i].reading;
+        } else if ((i + 1) % 7 === 1) {
+            sevenDayAmount += readings[i].reading;
+        }
     }
-
 
     const differentDaysCost = [
         {dayOfWeek: "firstDay", cost: firstDayAmount * rate},
