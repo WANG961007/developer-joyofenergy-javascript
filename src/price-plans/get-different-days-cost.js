@@ -26,7 +26,7 @@ const getDifferentDaysCost = (readings, rate) => {
         }
     }
 
-    const differentDaysCost = [
+    return [
         {dayOfWeek: "firstDay", cost: firstDayAmount * rate},
         {dayOfWeek: "secondDay", cost: secondDayAmount * rate},
         {dayOfWeek: "thirdDay", cost: thirdDayAmount * rate},
@@ -35,8 +35,6 @@ const getDifferentDaysCost = (readings, rate) => {
         {dayOfWeek: "sixthDay", cost: sixthDayAmount * rate},
         {dayOfWeek: "seventhDay", cost: sevenDayAmount * rate},
     ];
-
-    return differentDaysCost;
 };
 
 module.exports = { getDifferentDaysCost };
