@@ -1,7 +1,7 @@
 const { pricePlans } = require("./price-plans");
 const { usageForAllPricePlans, usageCost} = require("../usage/usage");
 const { meterPricePlanMap } = require("../meters/meters");
-const { amountCompare } = require("../price-plans/amount-compare");
+// const { amountCompare } = require("../price-plans/amount-compare");
 const { getDifferentDaysCost } = require("./get-different-days-cost");
 
 const recommend = (getReadings, req) => {
@@ -49,5 +49,11 @@ const getLastWeekUsageCostRank = (getReadings, req) => {
         differentDaysRanks: differentDaysRanks
     }
 };
+
+function amountCompare(p) {
+    return function (a, b) {
+        return a[p] - b[p];
+    };
+}
 
 module.exports = { recommend, compare, getLastWeekUsageCost, getLastWeekUsageCostRank};
