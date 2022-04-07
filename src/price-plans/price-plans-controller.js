@@ -1,7 +1,6 @@
 const { pricePlans } = require("./price-plans");
 const { usageForAllPricePlans, usageCost} = require("../usage/usage");
 const { meterPricePlanMap } = require("../meters/meters");
-// const { amountCompare } = require("../price-plans/amount-compare");
 const { getDifferentDaysCost } = require("./get-different-days-cost");
 
 const recommend = (getReadings, req) => {
