@@ -30,7 +30,7 @@ const getLastWeekUsageCost = (getReadings, req) => {
     const meter = req.params.smartMeterId;
     const specificRate = meterPricePlanMap[meter].rate;
     const specificSupplier = meterPricePlanMap[meter].supplier;
-    const specificLastWeekUsageCost = usageCost(getReadings(meter),specificRate);
+    const specificLastWeekUsageCost = usageCost(getReadings(meter),specificRate).toFixed(4);
     return {
         smartMeterId: req.params.smartMeterId,
         specificLastWeekUsageCost:specificLastWeekUsageCost,

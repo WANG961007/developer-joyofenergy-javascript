@@ -1,7 +1,7 @@
 const average = (readings) => {
     return (
-        readings.reduce((prev, next) => prev + next.reading, 0) /
-        readings.length
+        (readings.reduce((prev, next) => prev + next.reading, 0) /
+            readings.length).toFixed(5)
     );
 };
 
