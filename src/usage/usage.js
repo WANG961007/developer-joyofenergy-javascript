@@ -1,23 +1,23 @@
 const average = (readings) => {
     return (
-        readings.reduce((prev, next) => prev + next.reading, 0) /
-        readings.length
+        (readings.reduce((prev, next) => prev + next.reading, 0) /
+            readings.length).toFixed(5)
     );
 };
 
-const timeElapsedInHours = (readings) => {
-    readings.sort((a, b) => a.time - b.time);
-    const seconds = readings[readings.length - 1].time - readings[0].time;
-    const hours = Math.floor(seconds / 3600);
-    return hours;
-};
+// const timeElapsedInHours = (readings) => {
+//     readings.sort((a, b) => a.time - b.time);
+//     const seconds = readings[readings.length-1].time - readings[0].time;
+//     const hours = Math.floor(seconds / 3600);
+//     return hours;
+// };
 
-const usage = (readings) => {
-    return average(readings) / timeElapsedInHours(readings);
-};
+// const usage = (readings) => {
+//     return average(readings) / timeElapsedInHours(readings);
+// };
 
 const usageCost = (readings, rate) => {
-    return usage(readings) * rate;
+    return average(readings) * rate;
 };
 
 const usageForAllPricePlans = (pricePlans, readings) => {
@@ -30,8 +30,6 @@ const usageForAllPricePlans = (pricePlans, readings) => {
 
 module.exports = {
     average,
-    timeElapsedInHours,
-    usage,
     usageCost,
     usageForAllPricePlans,
 };

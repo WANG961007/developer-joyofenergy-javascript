@@ -2,7 +2,8 @@ const express = require("express");
 const { readings } = require("./readings/readings");
 const { readingsData } = require("./readings/readings.data");
 const { read, store } = require("./readings/readings-controller");
-const { recommend, compare } = require("./price-plans/price-plans-controller");
+const { meterPricePlanMap } = require("./meters/meters");
+const { recommend, compare, getLastWeekUsageCost, getLastWeekUsageCostRank} = require("./price-plans/price-plans-controller");
 
 const app = express();
 app.use(express.json());
@@ -25,7 +26,23 @@ app.get("/price-plans/compare-all/:smartMeterId", (req, res) => {
     res.send(compare(getReadings, req));
 });
 
-const port = process.env.PORT || 8080;
+app.get("/price-plans/lastWeekUsageCost/:smartMeterId", (req, res) => {
+    if (!meterPricePlanMap.hasOwnProperty(req.params.smartMeterId)) {
+        res.status(404).send("SmartMeterId does not exist!");
+    } else {
+        res.send(getLastWeekUsageCost(getReadings, req));
+    }
+});
+
+app.get("/price-plans/lastWeekUsageCostRank/:smartMeterId", (req, res) => {
+    if (!meterPricePlanMap.hasOwnProperty(req.params.smartMeterId)) {
+        res.status(404).send("SmartMeterId does not exist!");
+    } else {
+        res.send(getLastWeekUsageCostRank(getReadings, req));
+    }
+});
+
+const port = process.env.PORT || 8081;
 app.listen(port);
 
 console.log(`🚀 app listening on port ${port}`);

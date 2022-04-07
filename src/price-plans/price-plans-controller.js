@@ -1,5 +1,7 @@
 const { pricePlans } = require("./price-plans");
-const { usageForAllPricePlans } = require("../usage/usage");
+const { usageForAllPricePlans, usageCost} = require("../usage/usage");
+const { meterPricePlanMap } = require("../meters/meters");
+const { getDifferentDaysCost } = require("./get-different-days-cost");
 
 const recommend = (getReadings, req) => {
     const meter = req.params.smartMeterId;
@@ -11,7 +13,7 @@ const recommend = (getReadings, req) => {
 };
 
 const extractCost = (cost) => {
-    const [, value] = Object.entries(cost).find( ([key]) => key in pricePlans)
+    const [, value] = Object.entries(cost).find(([key]) => key in pricePlans);
     return value
 }
 
@@ -24,4 +26,33 @@ const compare = (getData, req) => {
     };
 };
 
-module.exports = { recommend, compare };
+const getLastWeekUsageCost = (getReadings, req) => {
+    const meter = req.params.smartMeterId;
+    const specificRate = meterPricePlanMap[meter].rate;
+    const specificSupplier = meterPricePlanMap[meter].supplier;
+    const specificLastWeekUsageCost = usageCost(getReadings(meter),specificRate).toFixed(4);
+    return {
+        smartMeterId: req.params.smartMeterId,
+        specificLastWeekUsageCost:specificLastWeekUsageCost,
+        specificSupplier: specificSupplier,
+    }
+};
+
+const getLastWeekUsageCostRank = (getReadings, req) => {
+    const meter = req.params.smartMeterId;
+    const specificRate = meterPricePlanMap[meter].rate;
+    const differentDaysRanks = getDifferentDaysCost(getReadings(meter), specificRate).sort(amountCompare("cost"));
+
+    return {
+        lastWeekUsageCost: getLastWeekUsageCost(getReadings, req),
+        differentDaysRanks: differentDaysRanks
+    }
+};
+
+function amountCompare(p) {
+    return function (a, b) {
+        return a[p] - b[p];
+    };
+}
+
+module.exports = { recommend, compare, getLastWeekUsageCost, getLastWeekUsageCostRank};
